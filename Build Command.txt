@@ -6,3 +6,4 @@ g++ -I src/include -L src/lib -o main main.cpp engine/engine.cpp engine/resoluti
 
 
 could add a bat file to ran this command
+// UPD : added bat file so the commands above are absolete and useless
