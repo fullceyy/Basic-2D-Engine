@@ -1,0 +1,194 @@
+\doxysection{Rectangle Class Reference}
+\hypertarget{class_rectangle}{}\label{class_rectangle}\index{Rectangle@{Rectangle}}
+
+
+A class representing a rectangle with drawing and transformation capabilities.  
+
+
+Inheritance diagram for Rectangle\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{class_rectangle}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \mbox{\hyperlink{class_rectangle_aae2e4f3395c57fea2b8a334fee9b243e}{\texorpdfstring{$\sim$}{\string~}\+Rectangle}} ()
+\item 
+\mbox{\hyperlink{class_rectangle_a8a933e0ebd9e80ce91e61ffe87fd577e}{Rectangle}} ()
+\item 
+void \mbox{\hyperlink{class_rectangle_aff074653a90833487bc37ea262b76c0b}{create\+Object}} (int x, int y, int w, int h, SDL\+\_\+\+Color \texorpdfstring{$\ast$}{*}color, SDL\+\_\+\+Renderer \texorpdfstring{$\ast$}{*}renderer)
+\begin{DoxyCompactList}\small\item\em Initializes / creates rectangle with given properties(position, dimensions, color) and renderer. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_rectangle_ac895c67f1d6337e3b4f72663b17dd299}{draw}} ()
+\begin{DoxyCompactList}\small\item\em Draws the rectangle on the SDL renderer. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_rectangle_a78c4ac9a4446c2656053aa12f9190fff}{translate}} (int dx, int dy)
+\begin{DoxyCompactList}\small\item\em Translates the rectangle by a given offset. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_rectangle_a2a7cfbe5ba5e3857f1e1f6de4eaaf324}{rotate}} (float angle)
+\begin{DoxyCompactList}\small\item\em Rotates the rectangle around its center by a given angle. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_rectangle_ae655c102d4ae95b6ae876393011b10b9}{scale}} (float factor)
+\begin{DoxyCompactList}\small\item\em Scales the rectangle by a given factor around it\textquotesingle{}s center. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_rectangle_a7218c05d6c735aa28c0e1d1c6d180f40}{update}} () override
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classshape_obj}{shape\+Obj}}}
+\begin{DoxyCompactItemize}
+\item 
+virtual \mbox{\hyperlink{classshape_obj_ad819e97fa62535625e9026c7fc72cb95}{\texorpdfstring{$\sim$}{\string~}shape\+Obj}} ()=default
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_transformability}{Transformability}}}
+\begin{DoxyCompactItemize}
+\item 
+virtual \mbox{\hyperlink{class_transformability_a52c86061b4770355c792956f395777fd}{\texorpdfstring{$\sim$}{\string~}\+Transformability}} ()=default
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_base}{Base}}}
+\begin{DoxyCompactItemize}
+\item 
+virtual \mbox{\hyperlink{class_base_a306fb25541331080645a716286357ef9}{\texorpdfstring{$\sim$}{\string~}\+Base}} ()=default
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_draw_ability}{Draw\+Ability}}}
+\begin{DoxyCompactItemize}
+\item 
+virtual \mbox{\hyperlink{class_draw_ability_a02f53476a4e6d104cbddc74a5cb3d72a}{\texorpdfstring{$\sim$}{\string~}\+Draw\+Ability}} ()=default
+\begin{DoxyCompactList}\small\item\em Default virtual destructor. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A class representing a rectangle with drawing and transformation capabilities. 
+
+The {\ttfamily \doxylink{class_rectangle}{Rectangle}} class provides methods to create a rectangle and perform transformations such as translation, rotation, and scaling. The rectangle is rendered using an {\ttfamily SDL\+\_\+\+Renderer} and a specified color. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_rectangle_aae2e4f3395c57fea2b8a334fee9b243e}\index{Rectangle@{Rectangle}!````~Rectangle@{\texorpdfstring{$\sim$}{\string~}Rectangle}}
+\index{````~Rectangle@{\texorpdfstring{$\sim$}{\string~}Rectangle}!Rectangle@{Rectangle}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}Rectangle()}{\string~Rectangle()}}
+{\footnotesize\ttfamily \label{class_rectangle_aae2e4f3395c57fea2b8a334fee9b243e} 
+virtual Rectangle\+::\texorpdfstring{$\sim$}{\string~}\+Rectangle (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+\Hypertarget{class_rectangle_a8a933e0ebd9e80ce91e61ffe87fd577e}\index{Rectangle@{Rectangle}!Rectangle@{Rectangle}}
+\index{Rectangle@{Rectangle}!Rectangle@{Rectangle}}
+\doxysubsubsection{\texorpdfstring{Rectangle()}{Rectangle()}}
+{\footnotesize\ttfamily \label{class_rectangle_a8a933e0ebd9e80ce91e61ffe87fd577e} 
+Rectangle\+::\+Rectangle (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_rectangle_aff074653a90833487bc37ea262b76c0b}\index{Rectangle@{Rectangle}!createObject@{createObject}}
+\index{createObject@{createObject}!Rectangle@{Rectangle}}
+\doxysubsubsection{\texorpdfstring{createObject()}{createObject()}}
+{\footnotesize\ttfamily \label{class_rectangle_aff074653a90833487bc37ea262b76c0b} 
+void Rectangle\+::create\+Object (\begin{DoxyParamCaption}\item[{int}]{x}{, }\item[{int}]{y}{, }\item[{int}]{w}{, }\item[{int}]{h}{, }\item[{SDL\+\_\+\+Color \texorpdfstring{$\ast$}{*}}]{color}{, }\item[{SDL\+\_\+\+Renderer \texorpdfstring{$\ast$}{*}}]{renderer}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Initializes / creates rectangle with given properties(position, dimensions, color) and renderer. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & The x-\/coordinate of the top left corner of the rectangle object. \\
+\hline
+{\em y} & The y-\/coordinate of the top left corner of the rectangle object. \\
+\hline
+{\em w} & The width of the rectangle. \\
+\hline
+{\em h} & The height of the rectangle. \\
+\hline
+{\em color} & The color which will be used to create a rectangle(outline color). \\
+\hline
+{\em renderer} & SDL\+\_\+renderer used for rendering the rectangle in the window. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_rectangle_ac895c67f1d6337e3b4f72663b17dd299}\index{Rectangle@{Rectangle}!draw@{draw}}
+\index{draw@{draw}!Rectangle@{Rectangle}}
+\doxysubsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily \label{class_rectangle_ac895c67f1d6337e3b4f72663b17dd299} 
+void Rectangle\+::draw (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Draws the rectangle on the SDL renderer. 
+
+This method sets the drawing color and renders the rectangle\textquotesingle{}s outline using SDL. Creates a SDL\+\_\+\+Rect tmp and uses values which were assigned in the {\ttfamily \doxylink{class_rectangle_aff074653a90833487bc37ea262b76c0b}{create\+Object()}} function. Set\textquotesingle{}s a color from the {\ttfamily \doxylink{class_rectangle_aff074653a90833487bc37ea262b76c0b}{create\+Object()}} and draws \doxylink{class_rectangle}{Rectangle} to the renderer. 
+
+Reimplemented from \mbox{\hyperlink{classshape_obj_a6697f12abc127bee0c9986c5296218b9}{shape\+Obj}}.
+
+\Hypertarget{class_rectangle_a2a7cfbe5ba5e3857f1e1f6de4eaaf324}\index{Rectangle@{Rectangle}!rotate@{rotate}}
+\index{rotate@{rotate}!Rectangle@{Rectangle}}
+\doxysubsubsection{\texorpdfstring{rotate()}{rotate()}}
+{\footnotesize\ttfamily \label{class_rectangle_a2a7cfbe5ba5e3857f1e1f6de4eaaf324} 
+void Rectangle\+::rotate (\begin{DoxyParamCaption}\item[{float}]{angle}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Rotates the rectangle around its center by a given angle. 
+
+This method computes the rotated positions of the rectangle\textquotesingle{}s corners and renders the transformed rectangle using lines connecting these points.
+
+
+\begin{DoxyParams}{Parameters}
+{\em angle} & The angle by which to rotate the rectangle, in degrees(which is converted to radians later). \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{classshape_obj_a6ddb996e8c0744019e65a7556437ec35}{shape\+Obj}}.
+
+\Hypertarget{class_rectangle_ae655c102d4ae95b6ae876393011b10b9}\index{Rectangle@{Rectangle}!scale@{scale}}
+\index{scale@{scale}!Rectangle@{Rectangle}}
+\doxysubsubsection{\texorpdfstring{scale()}{scale()}}
+{\footnotesize\ttfamily \label{class_rectangle_ae655c102d4ae95b6ae876393011b10b9} 
+void Rectangle\+::scale (\begin{DoxyParamCaption}\item[{float}]{factor}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Scales the rectangle by a given factor around it\textquotesingle{}s center. 
+
+This method adjusts the rectangle\textquotesingle{}s dimensions and position relative to its center based on the specified scaling factor and redraws it.
+
+
+\begin{DoxyParams}{Parameters}
+{\em factor} & The scaling factor (greater than 1 to enlarge, less than 1 to shrink). \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{classshape_obj_a5faa1e0dc8cac8e849b8fab3087d5c4c}{shape\+Obj}}.
+
+\Hypertarget{class_rectangle_a78c4ac9a4446c2656053aa12f9190fff}\index{Rectangle@{Rectangle}!translate@{translate}}
+\index{translate@{translate}!Rectangle@{Rectangle}}
+\doxysubsubsection{\texorpdfstring{translate()}{translate()}}
+{\footnotesize\ttfamily \label{class_rectangle_a78c4ac9a4446c2656053aa12f9190fff} 
+void Rectangle\+::translate (\begin{DoxyParamCaption}\item[{int}]{dx}{, }\item[{int}]{dy}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Translates the rectangle by a given offset. 
+
+This method moves the rectangle by the specified horizontal (dx) and vertical (dy) offsets and redraws it.
+
+
+\begin{DoxyParams}{Parameters}
+{\em dx} & The horizontal offset to move the rectangle. \\
+\hline
+{\em dy} & The vertical offset to move the rectangle. \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{classshape_obj_a20415eadf7935bbd6b209517c4d572c1}{shape\+Obj}}.
+
+\Hypertarget{class_rectangle_a7218c05d6c735aa28c0e1d1c6d180f40}\index{Rectangle@{Rectangle}!update@{update}}
+\index{update@{update}!Rectangle@{Rectangle}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily \label{class_rectangle_a7218c05d6c735aa28c0e1d1c6d180f40} 
+virtual void Rectangle\+::update (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{class_base_a753840f41ba2036dd280e246e5b6b46d}{Base}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{lab5_8cpp}{lab5.\+cpp}}\end{DoxyCompactItemize}

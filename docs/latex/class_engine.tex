@@ -1,0 +1,68 @@
+\doxysection{Engine Class Reference}
+\hypertarget{class_engine}{}\label{class_engine}\index{Engine@{Engine}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_engine_a8c98683b0a3aa28d8ab72a8bcd0d52f2}{Engine}} ()
+\item 
+\mbox{\hyperlink{class_engine_a8ef7030a089ecb30bbfcb9e43094717a}{\texorpdfstring{$\sim$}{\string~}\+Engine}} ()
+\item 
+bool \mbox{\hyperlink{class_engine_a6b6c40708fed3afad5dd5665a02903ba}{Init}} ()
+\item 
+void \mbox{\hyperlink{class_engine_aaa92f059235842e9dfa81e89dc717d0a}{Destroy}} ()
+\item 
+SDL\+\_\+\+Renderer \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_engine_ae42b73be55ab0fa034a0f7dea156cf9c}{get\+Renderer}} ()
+\item 
+SDL\+\_\+\+Window \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_engine_a7ac08a1606a878b6fccc0c089e648927}{get\+Window}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_engine_a8c98683b0a3aa28d8ab72a8bcd0d52f2}\index{Engine@{Engine}!Engine@{Engine}}
+\index{Engine@{Engine}!Engine@{Engine}}
+\doxysubsubsection{\texorpdfstring{Engine()}{Engine()}}
+{\footnotesize\ttfamily \label{class_engine_a8c98683b0a3aa28d8ab72a8bcd0d52f2} 
+Engine\+::\+Engine (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+engine constructor to init the SDL2 sub systems and window with renderer. \Hypertarget{class_engine_a8ef7030a089ecb30bbfcb9e43094717a}\index{Engine@{Engine}!````~Engine@{\texorpdfstring{$\sim$}{\string~}Engine}}
+\index{````~Engine@{\texorpdfstring{$\sim$}{\string~}Engine}!Engine@{Engine}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}Engine()}{\string~Engine()}}
+{\footnotesize\ttfamily \label{class_engine_a8ef7030a089ecb30bbfcb9e43094717a} 
+Engine\+::\texorpdfstring{$\sim$}{\string~}\+Engine (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+destructor which will call Destroy function on exit / engine termination. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_engine_aaa92f059235842e9dfa81e89dc717d0a}\index{Engine@{Engine}!Destroy@{Destroy}}
+\index{Destroy@{Destroy}!Engine@{Engine}}
+\doxysubsubsection{\texorpdfstring{Destroy()}{Destroy()}}
+{\footnotesize\ttfamily \label{class_engine_aaa92f059235842e9dfa81e89dc717d0a} 
+void Engine\+::\+Destroy (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{class_engine_ae42b73be55ab0fa034a0f7dea156cf9c}\index{Engine@{Engine}!getRenderer@{getRenderer}}
+\index{getRenderer@{getRenderer}!Engine@{Engine}}
+\doxysubsubsection{\texorpdfstring{getRenderer()}{getRenderer()}}
+{\footnotesize\ttfamily \label{class_engine_ae42b73be55ab0fa034a0f7dea156cf9c} 
+SDL\+\_\+\+Renderer \texorpdfstring{$\ast$}{*} Engine\+::get\+Renderer (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{class_engine_a7ac08a1606a878b6fccc0c089e648927}\index{Engine@{Engine}!getWindow@{getWindow}}
+\index{getWindow@{getWindow}!Engine@{Engine}}
+\doxysubsubsection{\texorpdfstring{getWindow()}{getWindow()}}
+{\footnotesize\ttfamily \label{class_engine_a7ac08a1606a878b6fccc0c089e648927} 
+SDL\+\_\+\+Window \texorpdfstring{$\ast$}{*} Engine\+::get\+Window (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{class_engine_a6b6c40708fed3afad5dd5665a02903ba}\index{Engine@{Engine}!Init@{Init}}
+\index{Init@{Init}!Engine@{Engine}}
+\doxysubsubsection{\texorpdfstring{Init()}{Init()}}
+{\footnotesize\ttfamily \label{class_engine_a6b6c40708fed3afad5dd5665a02903ba} 
+bool Engine\+::\+Init (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+initialize SDL subsystems, create window and renderer and specify important flags / arguments. subsystems, in our case VIDEO subsystem is initialized.
+
+window creation with SDL\+\_\+\+Create\+Window and SDL\+\_\+\+Window\texorpdfstring{$\ast$}{*} window pointer declared before. Parameters taken \+: specified height and width of the window, positioning of the window.
+
+renderer creation with SDL\+\_\+\+Create\+Renderer and SDL\+\_\+\+Renderer\texorpdfstring{$\ast$}{*} renderer pointer declated before. Parameters taken \+: SDL\+\_\+\+Window\texorpdfstring{$\ast$}{*} window.
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{lab5_8cpp}{lab5.\+cpp}}\end{DoxyCompactItemize}

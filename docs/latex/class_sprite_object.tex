@@ -1,0 +1,159 @@
+\doxysection{Sprite\+Object Class Reference}
+\hypertarget{class_sprite_object}{}\label{class_sprite_object}\index{SpriteObject@{SpriteObject}}
+
+
+A class representing an animated sprite object with drawable and animated capabilities.  
+
+
+Inheritance diagram for Sprite\+Object\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=5.000000cm]{class_sprite_object}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \mbox{\hyperlink{class_sprite_object_a9b4d755acd18c65693595e3b00055100}{\texorpdfstring{$\sim$}{\string~}\+Sprite\+Object}} ()
+\item 
+\mbox{\hyperlink{class_sprite_object_a163e24b016ccb900274017959df860aa}{Sprite\+Object}} (string \&filename, SDL\+\_\+\+Renderer \texorpdfstring{$\ast$}{*}renderer, int x, int y, int frame\+Width, int frame\+Height)
+\begin{DoxyCompactList}\small\item\em Constructor for the {\ttfamily \doxylink{class_sprite_object}{Sprite\+Object}} class. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_sprite_object_a9b6661172a27a3aadfba86eebf8c6e87}{draw}} () override
+\begin{DoxyCompactList}\small\item\em Calls in the {\ttfamily \doxylink{class_sprite_object_a9b6661172a27a3aadfba86eebf8c6e87}{draw()}} method from the {\ttfamily \doxylink{class_bitmap_object}{Bitmap\+Object}} class. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_sprite_object_aa26f147a4a061dc2fdb6c261b00078ad}{animate}} (int direction, bool idle)
+\begin{DoxyCompactList}\small\item\em Updates the animation based on the direction and idle state. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_sprite_object_a72bb1ca4d04b3dd10742c982629e5947}{animate}} () override
+\begin{DoxyCompactList}\small\item\em Derived class which must be present since the {\ttfamily \doxylink{class_sprite_object_a72bb1ca4d04b3dd10742c982629e5947}{animate()}} method is pure virtual function. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_bitmap_object}{Bitmap\+Object}}}
+\begin{DoxyCompactItemize}
+\item 
+virtual \mbox{\hyperlink{class_bitmap_object_a87ef9ecd05f680271a290b0093131ffb}{\texorpdfstring{$\sim$}{\string~}\+Bitmap\+Object}} ()
+\begin{DoxyCompactList}\small\item\em destructor for the {\ttfamily \doxylink{class_bitmap_object}{Bitmap\+Object}} class to destroy the created Texture from Surface. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_bitmap_object_a4e967b0ed0534d7ebeae6cd82f5be028}{Bitmap\+Object}} (string \&filename, SDL\+\_\+\+Renderer \texorpdfstring{$\ast$}{*}renderer, int x, int y, int w, int h)
+\begin{DoxyCompactList}\small\item\em Constructor for the {\ttfamily \doxylink{class_bitmap_object}{Bitmap\+Object}} class. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_bitmap_object_a4783bdeea34839e3cc70a746b6afc672}{translate}} (int dx, int dy) override
+\begin{DoxyCompactList}\small\item\em Translates the bitmap object by the specified offsets. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_bitmap_object_a12d6128c9c230f80d68204ee186d629c}{rotate}} (float angle) override
+\begin{DoxyCompactList}\small\item\em Rotates the bitmap object around its center by the specified angle. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_bitmap_object_a24c2e1eb62411e52586335f0827738c7}{set\+Src\+Rect}} (int x, int y, int w, int h)
+\begin{DoxyCompactList}\small\item\em Sets the source rectangle for cropping the texture from the spritesheet. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_bitmap_object_a78b25f60eba73a6ff7dfda7a13488a4a}{scale}} (float factor)
+\begin{DoxyCompactList}\small\item\em Scales the bitmap object by the specified factor. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_draw_ability}{Draw\+Ability}}}
+\begin{DoxyCompactItemize}
+\item 
+virtual \mbox{\hyperlink{class_draw_ability_a02f53476a4e6d104cbddc74a5cb3d72a}{\texorpdfstring{$\sim$}{\string~}\+Draw\+Ability}} ()=default
+\begin{DoxyCompactList}\small\item\em Default virtual destructor. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_draw_ability_af449f4807e59ffc7910f25c8103af84f}{update}} () override
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_base}{Base}}}
+\begin{DoxyCompactItemize}
+\item 
+virtual \mbox{\hyperlink{class_base_a306fb25541331080645a716286357ef9}{\texorpdfstring{$\sim$}{\string~}\+Base}} ()=default
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_transformability}{Transformability}}}
+\begin{DoxyCompactItemize}
+\item 
+virtual \mbox{\hyperlink{class_transformability_a52c86061b4770355c792956f395777fd}{\texorpdfstring{$\sim$}{\string~}\+Transformability}} ()=default
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_animated_object}{Animated\+Object}}}
+\begin{DoxyCompactItemize}
+\item 
+virtual \mbox{\hyperlink{class_animated_object_a3a1b6fd48793c49bb56804e5f5a5742d}{\texorpdfstring{$\sim$}{\string~}\+Animated\+Object}} ()=default
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A class representing an animated sprite object with drawable and animated capabilities. 
+
+The {\ttfamily \doxylink{class_sprite_object}{Sprite\+Object}} class extends {\ttfamily \doxylink{class_bitmap_object}{Bitmap\+Object}} and {\ttfamily \doxylink{class_animated_object}{Animated\+Object}} to provide functionalities for drawing, loading and animating sprites. It uses an SDL texture and source rectangles to manage frame-\/based animations. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_sprite_object_a9b4d755acd18c65693595e3b00055100}\index{SpriteObject@{SpriteObject}!````~SpriteObject@{\texorpdfstring{$\sim$}{\string~}SpriteObject}}
+\index{````~SpriteObject@{\texorpdfstring{$\sim$}{\string~}SpriteObject}!SpriteObject@{SpriteObject}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}SpriteObject()}{\string~SpriteObject()}}
+{\footnotesize\ttfamily \label{class_sprite_object_a9b4d755acd18c65693595e3b00055100} 
+virtual Sprite\+Object\+::\texorpdfstring{$\sim$}{\string~}\+Sprite\+Object (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+\Hypertarget{class_sprite_object_a163e24b016ccb900274017959df860aa}\index{SpriteObject@{SpriteObject}!SpriteObject@{SpriteObject}}
+\index{SpriteObject@{SpriteObject}!SpriteObject@{SpriteObject}}
+\doxysubsubsection{\texorpdfstring{SpriteObject()}{SpriteObject()}}
+{\footnotesize\ttfamily \label{class_sprite_object_a163e24b016ccb900274017959df860aa} 
+Sprite\+Object\+::\+Sprite\+Object (\begin{DoxyParamCaption}\item[{string \&}]{filename}{, }\item[{SDL\+\_\+\+Renderer \texorpdfstring{$\ast$}{*}}]{renderer}{, }\item[{int}]{x}{, }\item[{int}]{y}{, }\item[{int}]{frame\+Width}{, }\item[{int}]{frame\+Height}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Constructor for the {\ttfamily \doxylink{class_sprite_object}{Sprite\+Object}} class. 
+
+Initializes the sprite object with a sprite sheet, renderer, position, and frame dimensions(sprite\textquotesingle{}s frame properties).
+
+
+\begin{DoxyParams}{Parameters}
+{\em filename} & Reference to a string containing the path to the sprite sheet. \\
+\hline
+{\em renderer} & Pointer to the SDL\+\_\+\+Renderer used for rendering the sprite. \\
+\hline
+{\em x} & X-\/coordinate of the sprite\textquotesingle{}s initial position. \\
+\hline
+{\em y} & Y-\/coordinate of the sprite\textquotesingle{}s initial position. \\
+\hline
+{\em frame\+Width} & Width of each animation frame in the sprite sheet. \\
+\hline
+{\em frame\+Height} & Height of each animation frame in the sprite sheet. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_sprite_object_a72bb1ca4d04b3dd10742c982629e5947}\index{SpriteObject@{SpriteObject}!animate@{animate}}
+\index{animate@{animate}!SpriteObject@{SpriteObject}}
+\doxysubsubsection{\texorpdfstring{animate()}{animate()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{class_sprite_object_a72bb1ca4d04b3dd10742c982629e5947} 
+void Sprite\+Object\+::animate (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Derived class which must be present since the {\ttfamily \doxylink{class_sprite_object_a72bb1ca4d04b3dd10742c982629e5947}{animate()}} method is pure virtual function. 
+
+
+
+Implements \mbox{\hyperlink{class_animated_object_a355e94e568dd556b93ba55df7a3647f5}{Animated\+Object}}.
+
+\Hypertarget{class_sprite_object_aa26f147a4a061dc2fdb6c261b00078ad}\index{SpriteObject@{SpriteObject}!animate@{animate}}
+\index{animate@{animate}!SpriteObject@{SpriteObject}}
+\doxysubsubsection{\texorpdfstring{animate()}{animate()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{class_sprite_object_aa26f147a4a061dc2fdb6c261b00078ad} 
+void Sprite\+Object\+::animate (\begin{DoxyParamCaption}\item[{int}]{direction}{, }\item[{bool}]{idle}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Updates the animation based on the direction and idle state. 
+
+Adjusts the source rectangle to display the correct frame and row of the sprite sheet with simple calculations.
+
+
+\begin{DoxyParams}{Parameters}
+{\em direction} & The row in the sprite sheet corresponding to the current direction of animation. (// 0\+: Up, 1\+: Left, 2\+: Down, 3\+: Right) according to the spritesheet layout. \\
+\hline
+{\em idle} & If {\ttfamily true}, the sprite remains idle and displays the first frame of the specified direction. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_sprite_object_a9b6661172a27a3aadfba86eebf8c6e87}\index{SpriteObject@{SpriteObject}!draw@{draw}}
+\index{draw@{draw}!SpriteObject@{SpriteObject}}
+\doxysubsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily \label{class_sprite_object_a9b6661172a27a3aadfba86eebf8c6e87} 
+void Sprite\+Object\+::draw (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Calls in the {\ttfamily \doxylink{class_sprite_object_a9b6661172a27a3aadfba86eebf8c6e87}{draw()}} method from the {\ttfamily \doxylink{class_bitmap_object}{Bitmap\+Object}} class. 
+
+
+
+Reimplemented from \mbox{\hyperlink{class_bitmap_object_a355fa024ab654930a510dba1ed588be3}{Bitmap\+Object}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{lab5_8cpp}{lab5.\+cpp}}\end{DoxyCompactItemize}

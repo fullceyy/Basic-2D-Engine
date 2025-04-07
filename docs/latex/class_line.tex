@@ -1,0 +1,194 @@
+\doxysection{Line Class Reference}
+\hypertarget{class_line}{}\label{class_line}\index{Line@{Line}}
+
+
+A class representing a \doxylink{class_line}{Line} with drawing and transformation capabilities.  
+
+
+Inheritance diagram for Line\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{class_line}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \mbox{\hyperlink{class_line_a4a95bafcefa28672b3999deb011b9e50}{\texorpdfstring{$\sim$}{\string~}\+Line}} ()
+\item 
+\mbox{\hyperlink{class_line_acc11b8a429d8cdd63ba6803dff5602b3}{Line}} ()
+\item 
+void \mbox{\hyperlink{class_line_a0468eea85e7bed00de4120429b085583}{create\+Object}} (int x1, int y1, int x2, int y2, SDL\+\_\+\+Color \texorpdfstring{$\ast$}{*}color, SDL\+\_\+\+Renderer \texorpdfstring{$\ast$}{*}renderer)
+\begin{DoxyCompactList}\small\item\em Initializes / creates \doxylink{class_line}{Line} with given properties(position, dimensions, color) and renderer. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_line_ab6265993bf5acbc28830181c3e712f10}{draw}} ()
+\begin{DoxyCompactList}\small\item\em Draws the \doxylink{class_line}{Line} on the SDL renderer. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_line_a9e2eb865e84ef455d64710ddeddd3c44}{translate}} (int dx, int dy)
+\begin{DoxyCompactList}\small\item\em Translates the \doxylink{class_line}{Line} by a given offset. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_line_a54f5fe611566710b4fb08749e6b456be}{rotate}} (float angle)
+\begin{DoxyCompactList}\small\item\em Rotates the \doxylink{class_line}{Line} around its center by a given angle. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_line_ac93ff16ced5359487ad8b4971a822789}{scale}} (float factor)
+\begin{DoxyCompactList}\small\item\em Scales the \doxylink{class_line}{Line} by a given factor. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_line_a8b28d223e05a492bc3a59363b886bb6f}{update}} () override
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classshape_obj}{shape\+Obj}}}
+\begin{DoxyCompactItemize}
+\item 
+virtual \mbox{\hyperlink{classshape_obj_ad819e97fa62535625e9026c7fc72cb95}{\texorpdfstring{$\sim$}{\string~}shape\+Obj}} ()=default
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_transformability}{Transformability}}}
+\begin{DoxyCompactItemize}
+\item 
+virtual \mbox{\hyperlink{class_transformability_a52c86061b4770355c792956f395777fd}{\texorpdfstring{$\sim$}{\string~}\+Transformability}} ()=default
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_base}{Base}}}
+\begin{DoxyCompactItemize}
+\item 
+virtual \mbox{\hyperlink{class_base_a306fb25541331080645a716286357ef9}{\texorpdfstring{$\sim$}{\string~}\+Base}} ()=default
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_draw_ability}{Draw\+Ability}}}
+\begin{DoxyCompactItemize}
+\item 
+virtual \mbox{\hyperlink{class_draw_ability_a02f53476a4e6d104cbddc74a5cb3d72a}{\texorpdfstring{$\sim$}{\string~}\+Draw\+Ability}} ()=default
+\begin{DoxyCompactList}\small\item\em Default virtual destructor. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A class representing a \doxylink{class_line}{Line} with drawing and transformation capabilities. 
+
+The {\ttfamily \doxylink{class_line}{Line}} class provides methods to create a \doxylink{class_line}{Line} and perform transformations such as translation, rotation, and scaling. The \doxylink{class_line}{Line} is rendered using an {\ttfamily SDL\+\_\+\+Renderer} and a specified color. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_line_a4a95bafcefa28672b3999deb011b9e50}\index{Line@{Line}!````~Line@{\texorpdfstring{$\sim$}{\string~}Line}}
+\index{````~Line@{\texorpdfstring{$\sim$}{\string~}Line}!Line@{Line}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}Line()}{\string~Line()}}
+{\footnotesize\ttfamily \label{class_line_a4a95bafcefa28672b3999deb011b9e50} 
+virtual Line\+::\texorpdfstring{$\sim$}{\string~}\+Line (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+\Hypertarget{class_line_acc11b8a429d8cdd63ba6803dff5602b3}\index{Line@{Line}!Line@{Line}}
+\index{Line@{Line}!Line@{Line}}
+\doxysubsubsection{\texorpdfstring{Line()}{Line()}}
+{\footnotesize\ttfamily \label{class_line_acc11b8a429d8cdd63ba6803dff5602b3} 
+Line\+::\+Line (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_line_a0468eea85e7bed00de4120429b085583}\index{Line@{Line}!createObject@{createObject}}
+\index{createObject@{createObject}!Line@{Line}}
+\doxysubsubsection{\texorpdfstring{createObject()}{createObject()}}
+{\footnotesize\ttfamily \label{class_line_a0468eea85e7bed00de4120429b085583} 
+void Line\+::create\+Object (\begin{DoxyParamCaption}\item[{int}]{x1}{, }\item[{int}]{y1}{, }\item[{int}]{x2}{, }\item[{int}]{y2}{, }\item[{SDL\+\_\+\+Color \texorpdfstring{$\ast$}{*}}]{color}{, }\item[{SDL\+\_\+\+Renderer \texorpdfstring{$\ast$}{*}}]{renderer}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Initializes / creates \doxylink{class_line}{Line} with given properties(position, dimensions, color) and renderer. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x1} & The start x-\/coordinate of the \doxylink{class_line}{Line} object. \\
+\hline
+{\em y1} & The start y-\/coordinate of the \doxylink{class_line}{Line} object. \\
+\hline
+{\em x2} & The end x-\/coordinate of the \doxylink{class_line}{Line} object. \\
+\hline
+{\em y2} & The end y-\/coordinate of the \doxylink{class_line}{Line} object. \\
+\hline
+{\em color} & The color which will be used to create a \doxylink{class_line}{Line(outline color)}. \\
+\hline
+{\em renderer} & SDL\+\_\+renderer used for rendering the \doxylink{class_line}{Line} in the window. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_line_ab6265993bf5acbc28830181c3e712f10}\index{Line@{Line}!draw@{draw}}
+\index{draw@{draw}!Line@{Line}}
+\doxysubsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily \label{class_line_ab6265993bf5acbc28830181c3e712f10} 
+void Line\+::draw (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Draws the \doxylink{class_line}{Line} on the SDL renderer. 
+
+This method sets the drawing color and renders the \doxylink{class_line}{Line} based on its start and end coordinates. 
+
+Reimplemented from \mbox{\hyperlink{classshape_obj_a6697f12abc127bee0c9986c5296218b9}{shape\+Obj}}.
+
+\Hypertarget{class_line_a54f5fe611566710b4fb08749e6b456be}\index{Line@{Line}!rotate@{rotate}}
+\index{rotate@{rotate}!Line@{Line}}
+\doxysubsubsection{\texorpdfstring{rotate()}{rotate()}}
+{\footnotesize\ttfamily \label{class_line_a54f5fe611566710b4fb08749e6b456be} 
+void Line\+::rotate (\begin{DoxyParamCaption}\item[{float}]{angle}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Rotates the \doxylink{class_line}{Line} around its center by a given angle. 
+
+This method computes the rotated positions of the \doxylink{class_line}{Line}\textquotesingle{}s start and end points and renders the transformed \doxylink{class_line}{Line}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em angle} & The angle by which to rotate the \doxylink{class_line}{Line}, in degrees(converted to the radians later). \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{classshape_obj_a6ddb996e8c0744019e65a7556437ec35}{shape\+Obj}}.
+
+\Hypertarget{class_line_ac93ff16ced5359487ad8b4971a822789}\index{Line@{Line}!scale@{scale}}
+\index{scale@{scale}!Line@{Line}}
+\doxysubsubsection{\texorpdfstring{scale()}{scale()}}
+{\footnotesize\ttfamily \label{class_line_ac93ff16ced5359487ad8b4971a822789} 
+void Line\+::scale (\begin{DoxyParamCaption}\item[{float}]{factor}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Scales the \doxylink{class_line}{Line} by a given factor. 
+
+This method adjusts the \doxylink{class_line}{Line}\textquotesingle{}s start and end coordinates relative to its origin based on the specified scaling factor and redraws it.
+
+
+\begin{DoxyParams}{Parameters}
+{\em factor} & The scaling factor (greater than 1 to enlarge, less than 1 to shrink). \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{classshape_obj_a5faa1e0dc8cac8e849b8fab3087d5c4c}{shape\+Obj}}.
+
+\Hypertarget{class_line_a9e2eb865e84ef455d64710ddeddd3c44}\index{Line@{Line}!translate@{translate}}
+\index{translate@{translate}!Line@{Line}}
+\doxysubsubsection{\texorpdfstring{translate()}{translate()}}
+{\footnotesize\ttfamily \label{class_line_a9e2eb865e84ef455d64710ddeddd3c44} 
+void Line\+::translate (\begin{DoxyParamCaption}\item[{int}]{dx}{, }\item[{int}]{dy}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Translates the \doxylink{class_line}{Line} by a given offset. 
+
+This method moves the \doxylink{class_line}{Line} by the specified horizontal (dx) and vertical (dy) offsets and redraws it.
+
+
+\begin{DoxyParams}{Parameters}
+{\em dx} & The horizontal offset to move the \doxylink{class_line}{Line}. \\
+\hline
+{\em dy} & The vertical offset to move the \doxylink{class_line}{Line}. \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{classshape_obj_a20415eadf7935bbd6b209517c4d572c1}{shape\+Obj}}.
+
+\Hypertarget{class_line_a8b28d223e05a492bc3a59363b886bb6f}\index{Line@{Line}!update@{update}}
+\index{update@{update}!Line@{Line}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily \label{class_line_a8b28d223e05a492bc3a59363b886bb6f} 
+virtual void Line\+::update (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{class_base_a753840f41ba2036dd280e246e5b6b46d}{Base}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{lab5_8cpp}{lab5.\+cpp}}\end{DoxyCompactItemize}

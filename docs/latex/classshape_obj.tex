@@ -1,0 +1,156 @@
+\doxysection{shape\+Obj Class Reference}
+\hypertarget{classshape_obj}{}\label{classshape_obj}\index{shapeObj@{shapeObj}}
+
+
+A class representing a shape object that can be transformed and / or drawn. Inherits from \doxylink{class_transformability}{Transformability} and \doxylink{class_draw_ability}{Draw\+Ability}.  
+
+
+Inheritance diagram for shape\+Obj\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{classshape_obj}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \mbox{\hyperlink{classshape_obj_ad819e97fa62535625e9026c7fc72cb95}{\texorpdfstring{$\sim$}{\string~}shape\+Obj}} ()=default
+\item 
+virtual void \mbox{\hyperlink{classshape_obj_a6697f12abc127bee0c9986c5296218b9}{draw}} () override
+\item 
+virtual void \mbox{\hyperlink{classshape_obj_a6ddb996e8c0744019e65a7556437ec35}{rotate}} (float angle) override
+\begin{DoxyCompactList}\small\item\em Rotates the object by the given angle. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classshape_obj_a5faa1e0dc8cac8e849b8fab3087d5c4c}{scale}} (float factor) override
+\begin{DoxyCompactList}\small\item\em Scales the object by the given value. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classshape_obj_a20415eadf7935bbd6b209517c4d572c1}{translate}} (int dx, int dy) override
+\begin{DoxyCompactList}\small\item\em Translates the object by the given {\ttfamily X} and {\ttfamily Y} coordinates. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_transformability}{Transformability}}}
+\begin{DoxyCompactItemize}
+\item 
+virtual \mbox{\hyperlink{class_transformability_a52c86061b4770355c792956f395777fd}{\texorpdfstring{$\sim$}{\string~}\+Transformability}} ()=default
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_base}{Base}}}
+\begin{DoxyCompactItemize}
+\item 
+virtual \mbox{\hyperlink{class_base_a306fb25541331080645a716286357ef9}{\texorpdfstring{$\sim$}{\string~}\+Base}} ()=default
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_draw_ability}{Draw\+Ability}}}
+\begin{DoxyCompactItemize}
+\item 
+virtual \mbox{\hyperlink{class_draw_ability_a02f53476a4e6d104cbddc74a5cb3d72a}{\texorpdfstring{$\sim$}{\string~}\+Draw\+Ability}} ()=default
+\begin{DoxyCompactList}\small\item\em Default virtual destructor. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_draw_ability_af449f4807e59ffc7910f25c8103af84f}{update}} () override
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A class representing a shape object that can be transformed and / or drawn. Inherits from \doxylink{class_transformability}{Transformability} and \doxylink{class_draw_ability}{Draw\+Ability}. 
+
+The {\ttfamily \doxylink{classshape_obj}{shape\+Obj}} class is more specific implementation of the {\ttfamily \doxylink{class_transformability}{Transformability}} and {\ttfamily \doxylink{class_draw_ability}{Draw\+Ability}} classes. It combines the ability to perform geometric transformations (rotate, scale, translate) with the ability to draw the object. It overrides the virtual methods from both the {\ttfamily \doxylink{class_transformability}{Transformability}} and {\ttfamily \doxylink{class_draw_ability}{Draw\+Ability}} classes to provide specific behavior for each shape. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classshape_obj_ad819e97fa62535625e9026c7fc72cb95}\index{shapeObj@{shapeObj}!````~shapeObj@{\texorpdfstring{$\sim$}{\string~}shapeObj}}
+\index{````~shapeObj@{\texorpdfstring{$\sim$}{\string~}shapeObj}!shapeObj@{shapeObj}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}shapeObj()}{\string~shapeObj()}}
+{\footnotesize\ttfamily \label{classshape_obj_ad819e97fa62535625e9026c7fc72cb95} 
+virtual shape\+Obj\+::\texorpdfstring{$\sim$}{\string~}shape\+Obj (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}, {\ttfamily [default]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classshape_obj_a6697f12abc127bee0c9986c5296218b9}\index{shapeObj@{shapeObj}!draw@{draw}}
+\index{draw@{draw}!shapeObj@{shapeObj}}
+\doxysubsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily \label{classshape_obj_a6697f12abc127bee0c9986c5296218b9} 
+virtual void shape\+Obj\+::draw (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{class_base_ac533fe3b134f7f1ee5315293acb77a66}{Base}}.
+
+
+
+Reimplemented in \mbox{\hyperlink{class_line_ab6265993bf5acbc28830181c3e712f10}{Line}}, \mbox{\hyperlink{class_line_segment_ad7a0093fc25a2a7d197170089135fdaf}{Line\+Segment}}, and \mbox{\hyperlink{class_rectangle_ac895c67f1d6337e3b4f72663b17dd299}{Rectangle}}.
+
+\Hypertarget{classshape_obj_a6ddb996e8c0744019e65a7556437ec35}\index{shapeObj@{shapeObj}!rotate@{rotate}}
+\index{rotate@{rotate}!shapeObj@{shapeObj}}
+\doxysubsubsection{\texorpdfstring{rotate()}{rotate()}}
+{\footnotesize\ttfamily \label{classshape_obj_a6ddb996e8c0744019e65a7556437ec35} 
+virtual void shape\+Obj\+::rotate (\begin{DoxyParamCaption}\item[{float}]{angle}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Rotates the object by the given angle. 
+
+This pure virtual method should be overridden by derived classes to implement specific rotation behavior.
+
+
+\begin{DoxyParams}{Parameters}
+{\em angle} & The angle by which the object is to be rotated. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_transformability_a9bddd374a0d8bd14cb221a71cbd360bd}{Transformability}}.
+
+
+
+Reimplemented in \mbox{\hyperlink{class_line_a54f5fe611566710b4fb08749e6b456be}{Line}}, \mbox{\hyperlink{class_line_segment_af0e2f7da5cbf76fd5c37adb117463813}{Line\+Segment}}, and \mbox{\hyperlink{class_rectangle_a2a7cfbe5ba5e3857f1e1f6de4eaaf324}{Rectangle}}.
+
+\Hypertarget{classshape_obj_a5faa1e0dc8cac8e849b8fab3087d5c4c}\index{shapeObj@{shapeObj}!scale@{scale}}
+\index{scale@{scale}!shapeObj@{shapeObj}}
+\doxysubsubsection{\texorpdfstring{scale()}{scale()}}
+{\footnotesize\ttfamily \label{classshape_obj_a5faa1e0dc8cac8e849b8fab3087d5c4c} 
+virtual void shape\+Obj\+::scale (\begin{DoxyParamCaption}\item[{float}]{factor}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Scales the object by the given value. 
+
+This pure virtual method should be overridden by derived classes to implement specific scale behavior.
+
+
+\begin{DoxyParams}{Parameters}
+{\em factor} & The value by which the object is to be scaled. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_transformability_abb93cb74cf254f2a5799ac3b49001271}{Transformability}}.
+
+
+
+Reimplemented in \mbox{\hyperlink{class_line_ac93ff16ced5359487ad8b4971a822789}{Line}}, \mbox{\hyperlink{class_line_segment_aa3b41da55788f7596ec170e330863b02}{Line\+Segment}}, and \mbox{\hyperlink{class_rectangle_ae655c102d4ae95b6ae876393011b10b9}{Rectangle}}.
+
+\Hypertarget{classshape_obj_a20415eadf7935bbd6b209517c4d572c1}\index{shapeObj@{shapeObj}!translate@{translate}}
+\index{translate@{translate}!shapeObj@{shapeObj}}
+\doxysubsubsection{\texorpdfstring{translate()}{translate()}}
+{\footnotesize\ttfamily \label{classshape_obj_a20415eadf7935bbd6b209517c4d572c1} 
+virtual void shape\+Obj\+::translate (\begin{DoxyParamCaption}\item[{int}]{dx}{, }\item[{int}]{dy}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Translates the object by the given {\ttfamily X} and {\ttfamily Y} coordinates. 
+
+This pure virtual method should be overridden by derived classes to implement specific rotation behavior.
+
+
+\begin{DoxyParams}{Parameters}
+{\em dx} & translates an objects {\ttfamily X} coordinate. \\
+\hline
+{\em dy} & translates an objects {\ttfamily Y} coordinate. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_transformability_acff2491ee359935153873dde35c60faa}{Transformability}}.
+
+
+
+Reimplemented in \mbox{\hyperlink{class_line_a9e2eb865e84ef455d64710ddeddd3c44}{Line}}, \mbox{\hyperlink{class_line_segment_a428cc0807742eddceff695e314fd4732}{Line\+Segment}}, and \mbox{\hyperlink{class_rectangle_a78c4ac9a4446c2656053aa12f9190fff}{Rectangle}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{lab5_8cpp}{lab5.\+cpp}}\end{DoxyCompactItemize}

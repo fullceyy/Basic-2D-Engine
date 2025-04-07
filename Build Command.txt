@@ -1,0 +1,8 @@
+g++ -I src/include -L src/lib -o main main.cpp -lmingw32 -lSDL2main -lSDL2
+
+
+// newest
+g++ -I src/include -L src/lib -o main main.cpp engine/engine.cpp engine/resolutionDialog.cpp engine/primitives.cpp engine/point.cpp -lmingw32 -lSDL2main -lSDL2 -lSDL2_ttf
+
+
+could add a bat file to ran this command

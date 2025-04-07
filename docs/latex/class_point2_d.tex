@@ -1,0 +1,138 @@
+\doxysection{Point2D Class Reference}
+\hypertarget{class_point2_d}{}\label{class_point2_d}\index{Point2D@{Point2D}}
+
+
+A class representing a 2D point that can be transformed and drawn.  
+
+
+Inheritance diagram for Point2D\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{class_point2_d}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_point2_d_a10bc6b9fcbc3b0a1cd13ab0614458b4e}{Point2D}} (int x=0, int y=0)
+\begin{DoxyCompactList}\small\item\em Constructor to create a 2D point with specified coordinates. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_point2_d_ae7b01e418dc5dd01ba1e9fdb85fb70e0}{set\+Point}} (int x, int y)
+\begin{DoxyCompactList}\small\item\em Sets the coordinates of the point object. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_point2_d_a558f484d3feb2432350e3d3149e72e8c}{getX}} ()
+\begin{DoxyCompactList}\small\item\em Gets the x-\/coordinate of the point. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_point2_d_a86630685042226ef670949d164ced5ca}{getY}} ()
+\begin{DoxyCompactList}\small\item\em Gets the y-\/coordinate of the point. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classshape_obj}{shape\+Obj}}}
+\begin{DoxyCompactItemize}
+\item 
+virtual \mbox{\hyperlink{classshape_obj_ad819e97fa62535625e9026c7fc72cb95}{\texorpdfstring{$\sim$}{\string~}shape\+Obj}} ()=default
+\item 
+virtual void \mbox{\hyperlink{classshape_obj_a6697f12abc127bee0c9986c5296218b9}{draw}} () override
+\item 
+virtual void \mbox{\hyperlink{classshape_obj_a6ddb996e8c0744019e65a7556437ec35}{rotate}} (float angle) override
+\begin{DoxyCompactList}\small\item\em Rotates the object by the given angle. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classshape_obj_a5faa1e0dc8cac8e849b8fab3087d5c4c}{scale}} (float factor) override
+\begin{DoxyCompactList}\small\item\em Scales the object by the given value. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classshape_obj_a20415eadf7935bbd6b209517c4d572c1}{translate}} (int dx, int dy) override
+\begin{DoxyCompactList}\small\item\em Translates the object by the given {\ttfamily X} and {\ttfamily Y} coordinates. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_transformability}{Transformability}}}
+\begin{DoxyCompactItemize}
+\item 
+virtual \mbox{\hyperlink{class_transformability_a52c86061b4770355c792956f395777fd}{\texorpdfstring{$\sim$}{\string~}\+Transformability}} ()=default
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_base}{Base}}}
+\begin{DoxyCompactItemize}
+\item 
+virtual \mbox{\hyperlink{class_base_a306fb25541331080645a716286357ef9}{\texorpdfstring{$\sim$}{\string~}\+Base}} ()=default
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_draw_ability}{Draw\+Ability}}}
+\begin{DoxyCompactItemize}
+\item 
+virtual \mbox{\hyperlink{class_draw_ability_a02f53476a4e6d104cbddc74a5cb3d72a}{\texorpdfstring{$\sim$}{\string~}\+Draw\+Ability}} ()=default
+\begin{DoxyCompactList}\small\item\em Default virtual destructor. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_draw_ability_af449f4807e59ffc7910f25c8103af84f}{update}} () override
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A class representing a 2D point that can be transformed and drawn. 
+
+The {\ttfamily \doxylink{class_point2_d}{Point2D}} class virtually inherits from {\ttfamily \doxylink{classshape_obj}{shape\+Obj}}, which provides transformation and drawing methods. It represents a 2D point with specific x and y coordinates. The class provides methods for setting and getting the coordinates, as well as drawing and transforming the point when inherited behavior is used. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_point2_d_a10bc6b9fcbc3b0a1cd13ab0614458b4e}\index{Point2D@{Point2D}!Point2D@{Point2D}}
+\index{Point2D@{Point2D}!Point2D@{Point2D}}
+\doxysubsubsection{\texorpdfstring{Point2D()}{Point2D()}}
+{\footnotesize\ttfamily \label{class_point2_d_a10bc6b9fcbc3b0a1cd13ab0614458b4e} 
+Point2\+D\+::\+Point2D (\begin{DoxyParamCaption}\item[{int}]{x}{ = {\ttfamily 0}, }\item[{int}]{y}{ = {\ttfamily 0}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Constructor to create a 2D point with specified coordinates. 
+
+The constructor initializes the point with the given x and y coordinates. If no coordinates are provided, it defaults to (0, 0).
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & The x-\/coordinate of the point (default is 0). \\
+\hline
+{\em y} & The y-\/coordinate of the point (default is 0). \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_point2_d_a558f484d3feb2432350e3d3149e72e8c}\index{Point2D@{Point2D}!getX@{getX}}
+\index{getX@{getX}!Point2D@{Point2D}}
+\doxysubsubsection{\texorpdfstring{getX()}{getX()}}
+{\footnotesize\ttfamily \label{class_point2_d_a558f484d3feb2432350e3d3149e72e8c} 
+int Point2\+D\+::getX (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Gets the x-\/coordinate of the point. 
+
+This method returns x coordinate of the point.
+
+\begin{DoxyReturn}{Returns}
+The x-\/coordinate of the point. 
+\end{DoxyReturn}
+\Hypertarget{class_point2_d_a86630685042226ef670949d164ced5ca}\index{Point2D@{Point2D}!getY@{getY}}
+\index{getY@{getY}!Point2D@{Point2D}}
+\doxysubsubsection{\texorpdfstring{getY()}{getY()}}
+{\footnotesize\ttfamily \label{class_point2_d_a86630685042226ef670949d164ced5ca} 
+int Point2\+D\+::getY (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Gets the y-\/coordinate of the point. 
+
+This method returns y coordinate of the point.
+
+\begin{DoxyReturn}{Returns}
+The y-\/coordinate of the point. 
+\end{DoxyReturn}
+\Hypertarget{class_point2_d_ae7b01e418dc5dd01ba1e9fdb85fb70e0}\index{Point2D@{Point2D}!setPoint@{setPoint}}
+\index{setPoint@{setPoint}!Point2D@{Point2D}}
+\doxysubsubsection{\texorpdfstring{setPoint()}{setPoint()}}
+{\footnotesize\ttfamily \label{class_point2_d_ae7b01e418dc5dd01ba1e9fdb85fb70e0} 
+void Point2\+D\+::set\+Point (\begin{DoxyParamCaption}\item[{int}]{x}{, }\item[{int}]{y}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Sets the coordinates of the point object. 
+
+This method allows updating the x and y coordinates of the point.
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & The new x-\/coordinate of the point. \\
+\hline
+{\em y} & The new y-\/coordinate of the point. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{lab5_8cpp}{lab5.\+cpp}}\end{DoxyCompactItemize}

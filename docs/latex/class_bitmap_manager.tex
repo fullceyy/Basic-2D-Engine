@@ -1,0 +1,162 @@
+\doxysection{Bitmap\+Manager Class Reference}
+\hypertarget{class_bitmap_manager}{}\label{class_bitmap_manager}\index{BitmapManager@{BitmapManager}}
+
+
+This class will be handling fundamental bitmap operations such as creation, loading, deleting, saving and copying to other bmp.  
+
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \mbox{\hyperlink{class_bitmap_manager_a50249f7a195f5a9526488fda59eea59c}{\texorpdfstring{$\sim$}{\string~}\+Bitmap\+Manager}} ()
+\begin{DoxyCompactList}\small\item\em Destructor for the {\ttfamily \doxylink{class_bitmap_manager}{Bitmap\+Manager}} class. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_bitmap_manager_a60652c8ff01730dbacf8527c2c627643}{Bitmap\+Manager}} ()
+\item 
+bool \mbox{\hyperlink{class_bitmap_manager_af6be541257a168027ce6149168acf889}{load\+Bitmap\+Content}} (string \&filename)
+\begin{DoxyCompactList}\small\item\em Loads bitmap image from a given string filename into the surface({\ttfamily image\+Surface}). \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_bitmap_manager_acfa312d8f2a7805c83cd8026f98a929f}{create\+Bitmap\+Obj}} (int b\+Width, int b\+Height, int depth=24)
+\begin{DoxyCompactList}\small\item\em Creates a bitmap object / new blank bitmap surface with the specified height, width and bit depth. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_bitmap_manager_ab6be39b3c98bcf4733427da200f79de1}{delete\+Bitmap\+Obj}} ()
+\begin{DoxyCompactList}\small\item\em deletes the bitmap object / current bitmap surface, by freeing the surface. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_bitmap_manager_a6a1a18b3bab1cf0c706de86b95247133}{save\+To\+File}} (string \&filename)
+\begin{DoxyCompactList}\small\item\em Saves the current bitmap surface to a specified file. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_bitmap_manager_aa22b63bc6cf2c63b5c72a5859c0aaed3}{copy\+To}} (\mbox{\hyperlink{class_bitmap_manager}{Bitmap\+Manager}} \&copy\+Destination)
+\begin{DoxyCompactList}\small\item\em Copies the bitmap content to another {\ttfamily \doxylink{class_bitmap_manager}{Bitmap\+Manager}} object. \end{DoxyCompactList}\item 
+SDL\+\_\+\+Surface \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_bitmap_manager_a597b62b4fd434b4ac8b202f7600bb1fb}{get\+Surface}} ()
+\begin{DoxyCompactList}\small\item\em Getter method for surface. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This class will be handling fundamental bitmap operations such as creation, loading, deleting, saving and copying to other bmp. 
+
+Will be using SDL\textquotesingle{}s SDL\+\_\+\+Surface structure to manipulate bitmap operations. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_bitmap_manager_a50249f7a195f5a9526488fda59eea59c}\index{BitmapManager@{BitmapManager}!````~BitmapManager@{\texorpdfstring{$\sim$}{\string~}BitmapManager}}
+\index{````~BitmapManager@{\texorpdfstring{$\sim$}{\string~}BitmapManager}!BitmapManager@{BitmapManager}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}BitmapManager()}{\string~BitmapManager()}}
+{\footnotesize\ttfamily \label{class_bitmap_manager_a50249f7a195f5a9526488fda59eea59c} 
+virtual Bitmap\+Manager\+::\texorpdfstring{$\sim$}{\string~}\+Bitmap\+Manager (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Destructor for the {\ttfamily \doxylink{class_bitmap_manager}{Bitmap\+Manager}} class. 
+
+Cleans up and deletes any associated resources by freeing the {\ttfamily image\+Surface}, freeing the surface is important mechanic in the Manager. \Hypertarget{class_bitmap_manager_a60652c8ff01730dbacf8527c2c627643}\index{BitmapManager@{BitmapManager}!BitmapManager@{BitmapManager}}
+\index{BitmapManager@{BitmapManager}!BitmapManager@{BitmapManager}}
+\doxysubsubsection{\texorpdfstring{BitmapManager()}{BitmapManager()}}
+{\footnotesize\ttfamily \label{class_bitmap_manager_a60652c8ff01730dbacf8527c2c627643} 
+Bitmap\+Manager\+::\+Bitmap\+Manager (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_bitmap_manager_aa22b63bc6cf2c63b5c72a5859c0aaed3}\index{BitmapManager@{BitmapManager}!copyTo@{copyTo}}
+\index{copyTo@{copyTo}!BitmapManager@{BitmapManager}}
+\doxysubsubsection{\texorpdfstring{copyTo()}{copyTo()}}
+{\footnotesize\ttfamily \label{class_bitmap_manager_aa22b63bc6cf2c63b5c72a5859c0aaed3} 
+bool Bitmap\+Manager\+::copy\+To (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_bitmap_manager}{Bitmap\+Manager}} \&}]{copy\+Destination}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Copies the bitmap content to another {\ttfamily \doxylink{class_bitmap_manager}{Bitmap\+Manager}} object. 
+
+Performs a blit operation to copy the content of this surface to the destination surface.
+
+
+\begin{DoxyParams}{Parameters}
+{\em copy\+Destination} & Reference to another {\ttfamily \doxylink{class_bitmap_manager}{Bitmap\+Manager}} object where the content will be copied. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+{\ttfamily true} if the copy operation is successful, {\ttfamily false} otherwise. 
+\end{DoxyReturn}
+\Hypertarget{class_bitmap_manager_acfa312d8f2a7805c83cd8026f98a929f}\index{BitmapManager@{BitmapManager}!createBitmapObj@{createBitmapObj}}
+\index{createBitmapObj@{createBitmapObj}!BitmapManager@{BitmapManager}}
+\doxysubsubsection{\texorpdfstring{createBitmapObj()}{createBitmapObj()}}
+{\footnotesize\ttfamily \label{class_bitmap_manager_acfa312d8f2a7805c83cd8026f98a929f} 
+bool Bitmap\+Manager\+::create\+Bitmap\+Obj (\begin{DoxyParamCaption}\item[{int}]{b\+Width}{, }\item[{int}]{b\+Height}{, }\item[{int}]{depth}{ = {\ttfamily 24}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Creates a bitmap object / new blank bitmap surface with the specified height, width and bit depth. 
+
+If a surface is already loaded, it frees that surface so we can keep using it. Creates a surface with the specified format.
+
+
+\begin{DoxyParams}{Parameters}
+{\em b\+Width} & The width of the bitmap. \\
+\hline
+{\em b\+Height} & The height of the bitmap. \\
+\hline
+{\em depth} & The bit depth of the bitmap(set to 24 by default). \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+{\ttfamily true} if the surface is successfully created, {\ttfamily false} if it isn\textquotesingle{}t. 
+\end{DoxyReturn}
+\Hypertarget{class_bitmap_manager_ab6be39b3c98bcf4733427da200f79de1}\index{BitmapManager@{BitmapManager}!deleteBitmapObj@{deleteBitmapObj}}
+\index{deleteBitmapObj@{deleteBitmapObj}!BitmapManager@{BitmapManager}}
+\doxysubsubsection{\texorpdfstring{deleteBitmapObj()}{deleteBitmapObj()}}
+{\footnotesize\ttfamily \label{class_bitmap_manager_ab6be39b3c98bcf4733427da200f79de1} 
+void Bitmap\+Manager\+::delete\+Bitmap\+Obj (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+deletes the bitmap object / current bitmap surface, by freeing the surface. 
+
+\Hypertarget{class_bitmap_manager_a597b62b4fd434b4ac8b202f7600bb1fb}\index{BitmapManager@{BitmapManager}!getSurface@{getSurface}}
+\index{getSurface@{getSurface}!BitmapManager@{BitmapManager}}
+\doxysubsubsection{\texorpdfstring{getSurface()}{getSurface()}}
+{\footnotesize\ttfamily \label{class_bitmap_manager_a597b62b4fd434b4ac8b202f7600bb1fb} 
+SDL\+\_\+\+Surface \texorpdfstring{$\ast$}{*} Bitmap\+Manager\+::get\+Surface (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Getter method for surface. 
+
+Provides an access to the surface. \Hypertarget{class_bitmap_manager_af6be541257a168027ce6149168acf889}\index{BitmapManager@{BitmapManager}!loadBitmapContent@{loadBitmapContent}}
+\index{loadBitmapContent@{loadBitmapContent}!BitmapManager@{BitmapManager}}
+\doxysubsubsection{\texorpdfstring{loadBitmapContent()}{loadBitmapContent()}}
+{\footnotesize\ttfamily \label{class_bitmap_manager_af6be541257a168027ce6149168acf889} 
+bool Bitmap\+Manager\+::load\+Bitmap\+Content (\begin{DoxyParamCaption}\item[{string \&}]{filename}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Loads bitmap image from a given string filename into the surface({\ttfamily image\+Surface}). 
+
+If a surface is already loaded, it frees that surface so we can keep using it.
+
+
+\begin{DoxyParams}{Parameters}
+{\em filename} & Reference to a string containing the path and file itself that we ought to load. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+{\ttfamily true} if the image is successfully loaded, {\ttfamily false} if it couldn\textquotesingle{}t either find it with given path, or the file doesn\textquotesingle{}t exist. 
+\end{DoxyReturn}
+\Hypertarget{class_bitmap_manager_a6a1a18b3bab1cf0c706de86b95247133}\index{BitmapManager@{BitmapManager}!saveToFile@{saveToFile}}
+\index{saveToFile@{saveToFile}!BitmapManager@{BitmapManager}}
+\doxysubsubsection{\texorpdfstring{saveToFile()}{saveToFile()}}
+{\footnotesize\ttfamily \label{class_bitmap_manager_a6a1a18b3bab1cf0c706de86b95247133} 
+bool Bitmap\+Manager\+::save\+To\+File (\begin{DoxyParamCaption}\item[{string \&}]{filename}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Saves the current bitmap surface to a specified file. 
+
+This method saves the bitmap content to the specified file.
+
+
+\begin{DoxyParams}{Parameters}
+{\em filename} & Reference to a string containing the path where the bitmap will be saved. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+{\ttfamily true} if the file is successfully saved, {\ttfamily false} otherwise. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{lab5_8cpp}{lab5.\+cpp}}\end{DoxyCompactItemize}

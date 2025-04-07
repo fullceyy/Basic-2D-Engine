@@ -1,0 +1,53 @@
+\doxysection{lab5.\+cpp File Reference}
+\hypertarget{lab5_8cpp}{}\label{lab5_8cpp}\index{lab5.cpp@{lab5.cpp}}
+{\ttfamily \#include "{}SDL2/\+SDL.\+h"{}}\newline
+{\ttfamily \#include "{}SDL2/\+SDL\+\_\+image.\+h"{}}\newline
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$cmath$>$}\newline
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_engine}{Engine}}
+\item 
+class \mbox{\hyperlink{class_base}{Base}}
+\begin{DoxyCompactList}\small\item\em An abstract base class defining a common interface for update and draw operations, actual name Game\+Object. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_update_ability}{Update\+Ability}}
+\begin{DoxyCompactList}\small\item\em A mix -\/ in update class which extends the {\ttfamily \doxylink{class_base}{Base}} class, providing a default implementation for the update function, actual name {\ttfamily Update\+Object}. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_draw_ability}{Draw\+Ability}}
+\begin{DoxyCompactList}\small\item\em This class extends the {\ttfamily \doxylink{class_base}{Base}} class, and provides the ability to {\ttfamily draw} and {\ttfamily update}, actual name {\ttfamily Draw\+Object}. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_transformability}{Transformability}}
+\begin{DoxyCompactList}\small\item\em This class provides transformation abilities. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classshape_obj}{shape\+Obj}}
+\begin{DoxyCompactList}\small\item\em A class representing a shape object that can be transformed and / or drawn. Inherits from \doxylink{class_transformability}{Transformability} and \doxylink{class_draw_ability}{Draw\+Ability}. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_point2_d}{Point2D}}
+\begin{DoxyCompactList}\small\item\em A class representing a 2D point that can be transformed and drawn. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_line_segment}{Line\+Segment}}
+\begin{DoxyCompactList}\small\item\em A class representing a 2D line segment between two points with drawing and transformation capabilities. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_rectangle}{Rectangle}}
+\begin{DoxyCompactList}\small\item\em A class representing a rectangle with drawing and transformation capabilities. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_line}{Line}}
+\begin{DoxyCompactList}\small\item\em A class representing a \doxylink{class_line}{Line} with drawing and transformation capabilities. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_bitmap_manager}{Bitmap\+Manager}}
+\begin{DoxyCompactList}\small\item\em This class will be handling fundamental bitmap operations such as creation, loading, deleting, saving and copying to other bmp. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_bitmap_object}{Bitmap\+Object}}
+\begin{DoxyCompactList}\small\item\em A class representing a bitmap object with posibiliity of custom draw and transform behaviour. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_animated_object}{Animated\+Object}}
+\begin{DoxyCompactList}\small\item\em Abstract base class for objects with animation capabilities. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_sprite_object}{Sprite\+Object}}
+\begin{DoxyCompactList}\small\item\em A class representing an animated sprite object with drawable and animated capabilities. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_player}{Player}}
+\begin{DoxyCompactList}\small\item\em A class representing a player-\/controlled sprite in a game. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{lab5_8cpp_a0ddf1224851353fc92bfbff6f499fa97}{main}} (int argc, char \texorpdfstring{$\ast$}{*}argv\mbox{[}$\,$\mbox{]})
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{lab5_8cpp_a0ddf1224851353fc92bfbff6f499fa97}\index{lab5.cpp@{lab5.cpp}!main@{main}}
+\index{main@{main}!lab5.cpp@{lab5.cpp}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily \label{lab5_8cpp_a0ddf1224851353fc92bfbff6f499fa97} 
+int main (\begin{DoxyParamCaption}\item[{int}]{argc}{, }\item[{char \texorpdfstring{$\ast$}{*}}]{argv}{\mbox{[}$\,$\mbox{]}}\end{DoxyParamCaption})}
+

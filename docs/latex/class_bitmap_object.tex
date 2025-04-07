@@ -1,0 +1,208 @@
+\doxysection{Bitmap\+Object Class Reference}
+\hypertarget{class_bitmap_object}{}\label{class_bitmap_object}\index{BitmapObject@{BitmapObject}}
+
+
+A class representing a bitmap object with posibiliity of custom draw and transform behaviour.  
+
+
+Inheritance diagram for Bitmap\+Object\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=5.000000cm]{class_bitmap_object}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \mbox{\hyperlink{class_bitmap_object_a87ef9ecd05f680271a290b0093131ffb}{\texorpdfstring{$\sim$}{\string~}\+Bitmap\+Object}} ()
+\begin{DoxyCompactList}\small\item\em destructor for the {\ttfamily \doxylink{class_bitmap_object}{Bitmap\+Object}} class to destroy the created Texture from Surface. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_bitmap_object_a4e967b0ed0534d7ebeae6cd82f5be028}{Bitmap\+Object}} (string \&filename, SDL\+\_\+\+Renderer \texorpdfstring{$\ast$}{*}renderer, int x, int y, int w, int h)
+\begin{DoxyCompactList}\small\item\em Constructor for the {\ttfamily \doxylink{class_bitmap_object}{Bitmap\+Object}} class. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_bitmap_object_a355fa024ab654930a510dba1ed588be3}{draw}} () override
+\begin{DoxyCompactList}\small\item\em Draws the bitmap object to the screen using the renderer. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_bitmap_object_a4783bdeea34839e3cc70a746b6afc672}{translate}} (int dx, int dy) override
+\begin{DoxyCompactList}\small\item\em Translates the bitmap object by the specified offsets. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_bitmap_object_a12d6128c9c230f80d68204ee186d629c}{rotate}} (float angle) override
+\begin{DoxyCompactList}\small\item\em Rotates the bitmap object around its center by the specified angle. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_bitmap_object_a24c2e1eb62411e52586335f0827738c7}{set\+Src\+Rect}} (int x, int y, int w, int h)
+\begin{DoxyCompactList}\small\item\em Sets the source rectangle for cropping the texture from the spritesheet. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_bitmap_object_a78b25f60eba73a6ff7dfda7a13488a4a}{scale}} (float factor)
+\begin{DoxyCompactList}\small\item\em Scales the bitmap object by the specified factor. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_draw_ability}{Draw\+Ability}}}
+\begin{DoxyCompactItemize}
+\item 
+virtual \mbox{\hyperlink{class_draw_ability_a02f53476a4e6d104cbddc74a5cb3d72a}{\texorpdfstring{$\sim$}{\string~}\+Draw\+Ability}} ()=default
+\begin{DoxyCompactList}\small\item\em Default virtual destructor. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_draw_ability_af449f4807e59ffc7910f25c8103af84f}{update}} () override
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_base}{Base}}}
+\begin{DoxyCompactItemize}
+\item 
+virtual \mbox{\hyperlink{class_base_a306fb25541331080645a716286357ef9}{\texorpdfstring{$\sim$}{\string~}\+Base}} ()=default
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_transformability}{Transformability}}}
+\begin{DoxyCompactItemize}
+\item 
+virtual \mbox{\hyperlink{class_transformability_a52c86061b4770355c792956f395777fd}{\texorpdfstring{$\sim$}{\string~}\+Transformability}} ()=default
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A class representing a bitmap object with posibiliity of custom draw and transform behaviour. 
+
+The {\ttfamily \doxylink{class_bitmap_object}{Bitmap\+Object}} class allows creating and managing a bitmap object that can be drawn, translated, rotated, scaled, and cropped. It integrates with SDL to render textures and performs transformations on the bitmap directly.
+
+The bitmap\+Object is heavily reliant on the SDL\textquotesingle{}s source and destination rectangle. In the spritesheet, it will be setting a position of where the source rectangle should be reading and copying it into destination rectangle in the renderer. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_bitmap_object_a87ef9ecd05f680271a290b0093131ffb}\index{BitmapObject@{BitmapObject}!````~BitmapObject@{\texorpdfstring{$\sim$}{\string~}BitmapObject}}
+\index{````~BitmapObject@{\texorpdfstring{$\sim$}{\string~}BitmapObject}!BitmapObject@{BitmapObject}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}BitmapObject()}{\string~BitmapObject()}}
+{\footnotesize\ttfamily \label{class_bitmap_object_a87ef9ecd05f680271a290b0093131ffb} 
+virtual Bitmap\+Object\+::\texorpdfstring{$\sim$}{\string~}\+Bitmap\+Object (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+destructor for the {\ttfamily \doxylink{class_bitmap_object}{Bitmap\+Object}} class to destroy the created Texture from Surface. 
+
+\Hypertarget{class_bitmap_object_a4e967b0ed0534d7ebeae6cd82f5be028}\index{BitmapObject@{BitmapObject}!BitmapObject@{BitmapObject}}
+\index{BitmapObject@{BitmapObject}!BitmapObject@{BitmapObject}}
+\doxysubsubsection{\texorpdfstring{BitmapObject()}{BitmapObject()}}
+{\footnotesize\ttfamily \label{class_bitmap_object_a4e967b0ed0534d7ebeae6cd82f5be028} 
+Bitmap\+Object\+::\+Bitmap\+Object (\begin{DoxyParamCaption}\item[{string \&}]{filename}{, }\item[{SDL\+\_\+\+Renderer \texorpdfstring{$\ast$}{*}}]{renderer}{, }\item[{int}]{x}{, }\item[{int}]{y}{, }\item[{int}]{w}{, }\item[{int}]{h}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Constructor for the {\ttfamily \doxylink{class_bitmap_object}{Bitmap\+Object}} class. 
+
+Initializes the bitmap object with the specified properties and renderer. Using the provided {\ttfamily filename} we load Bitmap Content. After we use the getter method to get the access to the created surface and create Texture from it.
+
+
+\begin{DoxyParams}{Parameters}
+{\em filename} & Reference to a string containing the path to the bitmap file to be loaded. \\
+\hline
+{\em renderer} & Pointer to the SDL\+\_\+\+Renderer used for rendering the bitmap. \\
+\hline
+{\em x} & X-\/coordinate of the object\textquotesingle{}s position in the renderer / window. \\
+\hline
+{\em y} & Y-\/coordinate of the object\textquotesingle{}s position in the renderer / window. \\
+\hline
+{\em w} & Width of the bitmap object. \\
+\hline
+{\em h} & Height of the bitmap object. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_bitmap_object_a355fa024ab654930a510dba1ed588be3}\index{BitmapObject@{BitmapObject}!draw@{draw}}
+\index{draw@{draw}!BitmapObject@{BitmapObject}}
+\doxysubsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily \label{class_bitmap_object_a355fa024ab654930a510dba1ed588be3} 
+void Bitmap\+Object\+::draw (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Draws the bitmap object to the screen using the renderer. 
+
+Uses the source and destination rectangles to determine (cropping / position of specified bmp) and rendering locations. Checks if the texture loaded and created or not. dest\+Rect is set by the objects position, provided in the constructor and dimensions of the sprite. src\+Rect is set by the {\ttfamily \doxylink{class_bitmap_object_a24c2e1eb62411e52586335f0827738c7}{set\+Src\+Rect()}} function, which is called each time we have to change the frame of the sprite. 
+
+Reimplemented from \mbox{\hyperlink{class_draw_ability_a0f1fc01f20b3ce0011c4e9b3abfa6194}{Draw\+Ability}}.
+
+
+
+Reimplemented in \mbox{\hyperlink{class_sprite_object_a9b6661172a27a3aadfba86eebf8c6e87}{Sprite\+Object}}.
+
+\Hypertarget{class_bitmap_object_a12d6128c9c230f80d68204ee186d629c}\index{BitmapObject@{BitmapObject}!rotate@{rotate}}
+\index{rotate@{rotate}!BitmapObject@{BitmapObject}}
+\doxysubsubsection{\texorpdfstring{rotate()}{rotate()}}
+{\footnotesize\ttfamily \label{class_bitmap_object_a12d6128c9c230f80d68204ee186d629c} 
+void Bitmap\+Object\+::rotate (\begin{DoxyParamCaption}\item[{float}]{angle}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Rotates the bitmap object around its center by the specified angle. 
+
+Uses SDL\+\_\+\+Render\+Copy\+Ex for rotation. The angle is specified in degrees. Uses a work arond with SDL\+\_\+\+Point, which calculates the center of an object.
+
+
+\begin{DoxyParams}{Parameters}
+{\em angle} & The angle to rotate the object, in degrees. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_transformability_a9bddd374a0d8bd14cb221a71cbd360bd}{Transformability}}.
+
+\Hypertarget{class_bitmap_object_a78b25f60eba73a6ff7dfda7a13488a4a}\index{BitmapObject@{BitmapObject}!scale@{scale}}
+\index{scale@{scale}!BitmapObject@{BitmapObject}}
+\doxysubsubsection{\texorpdfstring{scale()}{scale()}}
+{\footnotesize\ttfamily \label{class_bitmap_object_a78b25f60eba73a6ff7dfda7a13488a4a} 
+void Bitmap\+Object\+::scale (\begin{DoxyParamCaption}\item[{float}]{factor}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Scales the bitmap object by the specified factor. 
+
+Adjusts the object\textquotesingle{}s size and position to scale it around its center.
+
+
+\begin{DoxyParams}{Parameters}
+{\em factor} & The scaling factor. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_transformability_abb93cb74cf254f2a5799ac3b49001271}{Transformability}}.
+
+\Hypertarget{class_bitmap_object_a24c2e1eb62411e52586335f0827738c7}\index{BitmapObject@{BitmapObject}!setSrcRect@{setSrcRect}}
+\index{setSrcRect@{setSrcRect}!BitmapObject@{BitmapObject}}
+\doxysubsubsection{\texorpdfstring{setSrcRect()}{setSrcRect()}}
+{\footnotesize\ttfamily \label{class_bitmap_object_a24c2e1eb62411e52586335f0827738c7} 
+void Bitmap\+Object\+::set\+Src\+Rect (\begin{DoxyParamCaption}\item[{int}]{x}{, }\item[{int}]{y}{, }\item[{int}]{w}{, }\item[{int}]{h}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Sets the source rectangle for cropping the texture from the spritesheet. 
+
+Specifies the area of the texture to be rendered.
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & X-\/coordinate of the source rectangle. \\
+\hline
+{\em y} & Y-\/coordinate of the source rectangle. \\
+\hline
+{\em w} & Width of the source rectangle. \\
+\hline
+{\em h} & Height of the source rectangle. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_bitmap_object_a4783bdeea34839e3cc70a746b6afc672}\index{BitmapObject@{BitmapObject}!translate@{translate}}
+\index{translate@{translate}!BitmapObject@{BitmapObject}}
+\doxysubsubsection{\texorpdfstring{translate()}{translate()}}
+{\footnotesize\ttfamily \label{class_bitmap_object_a4783bdeea34839e3cc70a746b6afc672} 
+void Bitmap\+Object\+::translate (\begin{DoxyParamCaption}\item[{int}]{dx}{, }\item[{int}]{dy}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Translates the bitmap object by the specified offsets. 
+
+Moves the object by modifying it\textquotesingle{}s position coordinates and redraws it.
+
+
+\begin{DoxyParams}{Parameters}
+{\em dx} & The horizontal offset to move the object. \\
+\hline
+{\em dy} & The vertical offset to move the object. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_transformability_acff2491ee359935153873dde35c60faa}{Transformability}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{lab5_8cpp}{lab5.\+cpp}}\end{DoxyCompactItemize}
